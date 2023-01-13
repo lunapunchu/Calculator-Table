@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	
+	<div>
+		<table id="myTable" class="table table-borderless table-dark" style="font-size: 1.1em; color: rgb(231, 221, 221);position:fixed; margin-top: padding-top;">
+			<thead>
+				<tr>
+					<td>Value1</td>
+					<td>Operator</td>
+					<td>Value2</td>
+					<td>Result</td>
+				</tr>
+			</thead>
+		</table>
+		<br>
+	</div>
+
+</head>
+<body>
+	<div class="container">
+		<form name="myform">
+			<div>
+				<input type="text"  name="text1" id="cal" class="display">
+			</div>
+			<br>
+			  <div >
+					<input type="button"  value="7" name = 'seven'class="b1" onclick="calculate('7')">
+					  <input type="button"  value="8" name = 'eight' class="b1" onclick="calculate('8')">
+					<input type="button"  value="9" name = 'nine' class="b1" onclick="calculate('9')">
+					<input type="button"  value="÷" name = 'div' class="b1" onclick="calculate('/')">
+				</div>
+				<div>
+					<input type="button"  value="4" name = 'four' class="b1" onclick="calculate('4')">
+					<input type="button"  value="5" name = 'five' class="b1" onclick="calculate('5')">
+					<input type="button"  value="6" name = 'six' class="b1" onclick="calculate('6')">
+					<input type="button"  value="×" name = 'mul' class="b1" onclick="calculate('*')">
+				</div>
+				<div>
+					<input type="button"  value="1" name = 'one' class="b1" onclick="calculate('1')">
+					<input type="button"  value="2" name = 'two'  class="b1" onclick="calculate('2')">
+					<input type="button"  value="3" name = 'three' class="b1" onclick="calculate('3')">
+					<input type="button"  value="-" name = 'minus'  class="b1"onclick="calculate('-')">
+				</div>
+				<div>
+					<input type="button"  value="C" name = 'Clear'class="clear" onclick="clearNum()">
+					<input type="button"  value="0" name = 'zero' class="b1" onclick ="calculate('0')">
+					<input type="button"  value="=" name = 'equal' class="b1" onclick="Equal()">
+					<input type="button"  value="+" name = 'plus' class="b1" onclick="calculate('+')">
+
+				</div>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
